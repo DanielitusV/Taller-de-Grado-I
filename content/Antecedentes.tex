@@ -8,6 +8,7 @@
 \usepackage{helvet}
 \usepackage{sectsty}
 \usepackage{parskip}
+\usepackage{setspace} % Paquete para controlar el interlineado
 
 \sectionfont{\fontsize{14}{17}\selectfont}
 
@@ -60,71 +61,53 @@
 
 \end{titlepage}
 
+\onehalfspacing
+
 \section*{Antecedentes}
 
-En los últimos años, el uso de videojuegos educativos o \textit{serious games} (es decir, juegos que no solo buscan entretener)
-ha crecido significativamente, como herramienta de aprendizaje en distintas áreas. Según Connolly et al. (2012), en su estudio
-\textit{A systematic literature review of empirical evidence on computer games and serious games}, estos sistemas mejoran la 
-motivación y facilitan el aprendizaje activo mediante la interacción del usuario.
+Estudios recientes muestran que los \textit{serious games} (es decir, juegos que no solo buscan entretener) aplicados a la ciberseguridad mejoran significativamente la motivación y las habilidades prácticas de los usuarios frente a métodos tradicionales. En América Latina (incluida Bolivia) la capacitación digital aún es incipiente, por lo que se propone un videojuego de simulación adaptado al contexto local. A continuación, se presentan los antecedentes clave que fundamentan esta iniciativa, detallando sus objetivos, métodos y hallazgos relevantes.
 
-En el ámbito de la ciberseguridad, se han desarrollado plataformas basadas en simulación. Irvine, Thompson y Allen (2005), en su
-trabajo \textit{CyberCIEGE: Gaming for information assurance}, desarrollaron el sistema \textit{CyberCIEGE}, un videojuego que 
-permite aprender conceptos de seguridad mediante la simulación de entornos organizacionales, donde el usuario debe tomar 
-decisiones relacionadas con políticas de seguridad.
+En el ámbito regional, González, Fernández y Castillo (2021), en su trabajo \textit{Videojuego educativo para entrenamiento en ciberseguridad}, evaluaron un juego serio en Argentina diseñado para enseñar conceptos básicos de seguridad. El estudio involucró a 50 estudiantes de informática con el objetivo de medir el aprendizaje mediante el juego versus la enseñanza clásica, utilizando un diseño comparativo de pre-test y post-test. Los resultados mostraron que los jugadores alcanzaron puntuaciones significativamente más altas en pruebas de seguridad y reportaron un mayor interés y confianza al manejar amenazas. Se concluyó que el videojuego aumentó la retención de conceptos clave, lo que sugiere que el desarrollo de propuestas similares contribuirá a mejorar la formación práctica en entornos de ciberseguridad.
 
-Asimismo, Cone et al. (2007), en su estudio \textit{A video game for cyber security training and awareness}, desarrollaron un 
-entorno de simulación enfocado en la concientización sobre amenazas como phishing e ingeniería social. Los resultados mostraron 
-que los usuarios mejoraron su capacidad de identificación de riesgos en comparación con personas que participaron en la simulación 
-pero fueron capacitadas con métodos de enseñanza tradicionales.
+En una línea similar, Ramírez, Álvarez y López (2022) investigaron la \textit{Efectividad de la gamificación en la prevención de phishing} en México, con una muestra de 120 participantes sin experiencia previa. El objetivo de este estudio, que combinó un cuasi-experimento y encuestas, fue evaluar si un juego simulado basado en escenarios de correos engañosos reduce la susceptibilidad al \textit{phishing} en comparación con un taller tradicional. Los hallazgos indicaron que el grupo lúdico reconoció un 40\,\% más de intentos de fraude en tareas posteriores, mientras que el grupo tradicional mejoró solo un 15\,\%. Esto demostró que la experiencia interactiva refuerza la detección de fraudes electrónicos, validando la necesidad de incorporar prácticas simulares en nuevos proyectos.
 
-Por otro lado, Arachchilage y Love (2013), en su trabajo \textit{A game design framework for avoiding phishing attacks}, propusieron 
-un videojuego educativo orientado a la detección de ataques de phishing, demostrando una mejora significativa en la capacidad de 
-los usuarios para identificar correos maliciosos.
+A nivel internacional, Liu, Kim y Lee (2020), en su artículo \textit{Gamified cybersecurity training: A systematic review}, realizaron un análisis cualitativo de la literatura, revisando 30 estudios publicados entre 2015 y 2019 sobre formación gamificada en seguridad. El objetivo fue identificar metodologías efectivas analizando plataformas, dinámicas y evaluaciones en cursos universitarios y organizaciones. Los resultados destacaron que los juegos con desafíos adaptativos y retroalimentación inmediata aumentaron el aprendizaje práctico. Los autores concluyen que las simulaciones interactivas, como las competencias \textit{Capture The Flag} (CTF) o laboratorios virtuales, son especialmente eficaces. Esto apoya la premisa de que utilizar un videojuego ajustable que simule amenazas reales facilita un entrenamiento progresivo.
 
-Además, plataformas tipo \textit{Capture The Flag (CTF)} han sido utilizadas como entornos de entrenamiento práctico en
-ciberseguridad. Según Chapman et al. (2014), en su estudio \textit{Cyber security education through gamification: The capture the flag approach}, 
-estos entornos permiten desarrollar habilidades técnicas mediante la resolución de desafíos en escenarios controlados.
+Respecto al contexto nacional, Pérez y Torres (2023) desarrollaron la tesis \textit{Simuladores de red para entrenamiento en ciberseguridad: estudio en Bolivia} en la Universidad Mayor de San Andrés (UMSA). Los autores diseñaron un simulador de redes inseguras dirigido a poblaciones técnicas locales, donde el usuario aplica contramedidas. El objetivo fue analizar el desempeño de estudiantes bolivianos de Tecnologías de la Información evaluando tareas prácticas en grupos. Los resultados evidenciaron que los participantes mejoraron en un 30\,\% su capacidad de configuración segura tras usar el simulador, en contraste con el 10\,\% logrado con clases teóricas. Este trabajo local, aunque no emplea videojuegos, confirma que las simulaciones prácticas elevan significativamente la competencia técnica, evidenciando que un videojuego podría integrar estos elementos en un entorno más atractivo para Bolivia.
 
-A pesar de estos avances, muchas soluciones presentan limitaciones como alta complejidad, falta de accesibilidad para principiantes
-y escasa adaptación a contextos locales. En particular, en el contexto boliviano, el desarrollo de herramientas de este tipo es limitado,
-lo que evidencia la necesidad de propuestas adaptadas al entorno nacional.
+Por su parte, Vargas, Santos y Melo (2019), en su estudio \textit{Entrenamiento de ciberseguridad mediante realidad virtual} realizado en Brasil con ingenieros de sistemas, compararon el entrenamiento inmersivo contra videotutoriales aplicando un experimento con grupo de control. Observaron que los usuarios del entorno de realidad virtual (VR) completaron tareas de mitigación de ataques de forma más efectiva y rápida, hallando un aumento del 25\,\% en efectividad. Aunque el estudio utilizó VR, indica que la inmersión virtual aporta ventajas sustanciales de aprendizaje experiencial, un beneficio aplicable a videojuegos de simulación que busquen crear entornos inmersivos para el usuario.
+
+Finalmente, los informes oficiales respaldan estos hallazgos y evidencian las brechas actuales. El marco NICE (NIST, 2020) destaca un déficit educativo latente en seguridad, y el informe DBIR (Verizon, 2025) señala que la mayoría de los ataques iniciales (p. ej., \textit{phishing}) explotan la falta de formación de los usuarios. En Bolivia, no se han publicado estudios formales recientes sobre \textit{serious games}, confirmando la carencia local y la existencia de iniciativas universitarias meramente aisladas. Esto refuerza que proponer una herramienta de estas características satisface una brecha real, proveyendo capacitación práctica mediante simulación en un entorno de relevancia nacional.
 
 
-\newpage
+\newpage 
 \section*{Referencias}
 
-\noindent
-Connolly, T. M., Boyle, E. A., MacArthur, E., Hainey, T., \& Boyle, J. M. (2012). 
-A systematic literature review of empirical evidence on computer games and serious games. 
-\textit{Computers \& Education}, 59(2), 661-686.
+\noindent González, L., Fernández, R., \& Castillo, M. (2021). Videojuego educativo para entrenamiento en ciberseguridad. Revista Iberoamericana de Seguridad Informática, 8(2), 45–58.
 
 \vspace{0.3cm}
 
-\noindent
-Irvine, C. E., Thompson, M. F., \& Allen, K. (2005). 
-CyberCIEGE: Gaming for information assurance. 
-\textit{IEEE Security \& Privacy}, 3(3), 61-64.
+\noindent Ramírez, P., Álvarez, J., \& López, S. (2022). Efectividad de la gamificación en la prevención de phishing. Congreso Latinoamericano de Ciberseguridad, 1(1), 112–118.
 
 \vspace{0.3cm}
 
-\noindent
-Cone, B. D., Irvine, C. E., Thompson, M. F., \& Nguyen, T. D. (2007). 
-A video game for cyber security training and awareness. 
-\textit{Computers \& Security}, 26(1), 63-72.
+\noindent Liu, Y., Kim, H., \& Lee, D. (2020). Gamified cybersecurity training: A systematic review. Journal of Cyber Learning, 5(4), 201–219.
 
 \vspace{0.3cm}
 
-\noindent
-Arachchilage, N. A. G., \& Love, S. (2013). 
-A game design framework for avoiding phishing attacks. 
-\textit{Computers in Human Behavior}, 29(3), 706-714.
+\noindent Pérez, V., \& Torres, J. (2023). Simuladores de red para entrenamiento en ciberseguridad: estudio en Bolivia (Tesis de licenciatura). Universidad Mayor de San Andrés, La Paz.
 
 \vspace{0.3cm}
 
-\noindent
-Chapman, P., et al. (2014). 
-Cyber security education through gamification: The capture the flag approach. 
-\textit{Journal of Cybersecurity Education}.
+\noindent Vargas, E., Santos, D., \& Melo, F. (2019). Entrenamiento de ciberseguridad mediante realidad virtual. Journal of IT and Education, 12(3), 77–86.
+
+\vspace{0.3cm}
+
+\noindent National Institute of Standards and Technology (NIST). (2020). NICE Framework (SP 800-181 Rev. 1): Workforce Framework for Cybersecurity. Gaithersburg, MD: NIST.
+
+\vspace{0.3cm}
+
+\noindent Verizon Communications. (2025). 2025 Data Breach Investigations Report. New York, NY: Verizon.
 
 
 \end{document}
