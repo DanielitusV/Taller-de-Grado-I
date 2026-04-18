@@ -7,10 +7,15 @@
 \usepackage[letterpaper, margin=2.5cm]{geometry}
 \usepackage{helvet}
 \usepackage{sectsty}
+\usepackage{tocloft}
 \usepackage{parskip}
 \usepackage{setspace} % Paquete para controlar el interlineado
 
 \sectionfont{\fontsize{14}{17}\selectfont}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
 
 \renewcommand{\familydefault}{\sfdefault}
 \graphicspath{{../images/}}
@@ -40,11 +45,15 @@
 
     \vspace{4cm}
 
-    {\LARGE \textbf{Proyecto de Grado:}\par}
+    {\Large Videojuego educativo de simulación para el aprendizaje práctico de ciberseguridad dirigido a los estudiantes de Informática y Sistemas\par}
 
-    {\Large Videojuego de simulación y entrenamiento en ciberseguridad\par}
+    \vspace{2cm}
 
-    \vspace{4cm}
+    \begin{flushleft}
+        \large
+        	\textbf{Área:} Ingeniería de Software \\[0.3cm]
+        	\textbf{Subárea:} Videojuegos y Gamificación
+    \end{flushleft}
 
     \begin{flushleft}
         \large
@@ -84,7 +93,6 @@ Por su parte, Vargas, Santos y Melo (2019), en su estudio \textit{Entrenamiento 
 Finalmente, los informes oficiales respaldan estos hallazgos y evidencian las brechas actuales. El marco NICE (NIST, 2020) destaca un déficit educativo latente en seguridad, y el informe DBIR (Verizon, 2025) señala que la mayoría de los ataques iniciales (p. ej., \textit{phishing}) explotan la falta de formación de los usuarios. En Bolivia, no se han publicado estudios formales recientes sobre \textit{serious games}, confirmando la carencia local y la existencia de iniciativas universitarias meramente aisladas. Esto refuerza que proponer una herramienta de estas características satisface una brecha real, proveyendo capacitación práctica mediante simulación en un entorno de relevancia nacional.
 
 
-\newpage
 
 \section{Planteamiento del Problema}
 
@@ -95,6 +103,14 @@ Sin embargo, la situación actual evidencia que el desarrollo de esta asignatura
 Asimismo, se observa una elevada cantidad de estudiantes inscritos en la asignatura, alcanzando aproximadamente 130 estudiantes en la gestión 2026-I y alrededor de 180 estudiantes en la gestión 2025-II, lo cual evidencia que esta situación no es aislada, sino recurrente en diferentes periodos académicos, dificultando el seguimiento individualizado y la retroalimentación efectiva. De igual manera, los mecanismos de evaluación se centran principalmente en exámenes teóricos y trabajos expositivos, reforzando el carácter conceptual de la materia.
 
 Esta problemática se presenta en la asignatura de Seguridad de Sistemas durante la gestión académica 2026-I en estudiantes de niveles avanzados de ambas carreras, donde dicha materia representa una de las pocas oportunidades de formación en seguridad informática. La persistencia de estas condiciones limita el desarrollo de habilidades prácticas necesarias en el área de la ciberseguridad, caracterizada por su naturaleza aplicada y dinámica. En este sentido, se evidencia la necesidad de analizar el proceso de enseñanza y aprendizaje en esta asignatura, considerando las condiciones actuales en las que se desarrolla.
+
+\subsection*{Formulación del problema}
+\addcontentsline{toc}{subsection}{Formulación del problema}
+
+\noindent ¿Cómo contribuye el desarrollo de un videojuego de simulación gamificada orientado al entrenamiento en ciberseguridad, basado en escenarios
+interactivos de amenazas digítales, retroalimentación inmediata y resolución progresiva de retos, en el fortalecimiento de las habilidades prácticas
+para identificar, analizar y responder ante incidentes reales de ciberseguridad en estudiantes de las carreras de Ingeniería en Informática y Sistemas
+de la Universidad Mayor de San Simón?
 
 \newpage 
 
