@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[letterpaper, margin=2.5cm]{geometry}
+\usepackage{helvet}
+\usepackage{sectsty}
+\usepackage{tocloft}
+\usepackage{parskip}
+\usepackage{setspace}
+
+\sectionfont{\fontsize{14}{17}\selectfont}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\graphicspath{{./}}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    \noindent
+    \begin{minipage}[c]{0.22\textwidth}
+        \centering
+        \includegraphics[width=3cm]{logo-umss.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.52\textwidth}
+        \centering
+        {\small UNIVERSIDAD MAYOR DE SAN SIMÓN \par}
+        \vspace{0.2cm}
+        {\small FACULTAD DE CIENCIAS Y TECNOLOGÍA \par}
+        \vspace{0.2cm}
+        {\small CARRERA DE INGENIERÍA INFORMÁTICA \par}
+    \end{minipage}
+    \begin{minipage}[c]{0.22\textwidth}
+        \centering
+        \includegraphics[width=3cm]{logo-fcyt.png}
+    \end{minipage}
+
+    \vspace{3.5cm}
+
+    {\Large \textbf{Marco Teórico}\par}
+    \vspace{0.6cm}
+    {\large Videojuego educativo de simulación gamificada para el aprendizaje práctico de ciberseguridad dirigido a estudiantes de Informática y Sistemas\par}
+
+    \vspace{2cm}
+
+    \begin{flushleft}
+        \large
+        \textbf{Área:} Ingeniería de Software \\[0.3cm]
+        \textbf{Subárea:} Videojuegos y Gamificación
+    \end{flushleft}
+
+    \begin{flushleft}
+        \large
+        \textbf{Materia:} Taller de Grado I \\[0.3cm]
+        \textbf{Estudiante:} José Daniel Virreira Rufino \\[0.3cm]
+        \textbf{Docente:} Lic. Corina Justina Flores Villaroel \\[0.3cm]
+        \textbf{Grupo:} 6 \\[0.3cm]
+        \textbf{Gestión:} I/2026
+    \end{flushleft}
+
+    \vfill
+
+    {\small Cochabamba - Bolivia\par}
+\end{titlepage}
+
+\onehalfspacing
+
+\tableofcontents
+\newpage
+
+\section{Introducción del Marco Teórico}
+
+El presente marco teórico fundamenta el proyecto orientado al fortalecimiento del aprendizaje práctico de ciberseguridad en estudiantes de Ingeniería en Informática e Ingeniería de Sistemas de la Universidad Mayor de San Simón. A partir del planteamiento del problema, se identifica una brecha entre la enseñanza principalmente teórica de la seguridad informática y la necesidad de desarrollar habilidades prácticas para reconocer amenazas, analizar vulnerabilidades y responder ante incidentes digitales.
+
+En este contexto, el videojuego no se asume como el núcleo del proyecto, sino como una herramienta educativa que permite organizar contenidos de ciberseguridad mediante simulación, interacción, práctica progresiva y retroalimentación inmediata. Por ello, el marco teórico se estructura de lo general a lo específico: primero se aborda la ciberseguridad en la educación superior, luego el aprendizaje práctico, posteriormente la gamificación y los juegos serios, y finalmente la simulación educativa aplicada a escenarios de amenazas digitales.
+
+\section{Ciberseguridad en la Educación Superior}
+
+\subsection{Concepto de ciberseguridad}
+
+La ciberseguridad comprende el conjunto de principios, procesos y controles orientados a proteger sistemas, redes, dispositivos e información frente a accesos no autorizados, alteraciones, interrupciones o ataques digitales. Su importancia ha aumentado debido a la dependencia creciente de plataformas tecnológicas en instituciones, empresas y usuarios. Para estudiantes de áreas informáticas, la ciberseguridad no debe entenderse únicamente como un contenido teórico, sino como una competencia profesional que requiere criterio técnico y capacidad de respuesta ante situaciones reales.
+
+Los principios clásicos de la seguridad de la información son la confidencialidad, la integridad y la disponibilidad. La confidencialidad busca que los datos sean accesibles solo para usuarios autorizados; la integridad asegura que la información no sea modificada indebidamente; y la disponibilidad procura que los sistemas permanezcan operativos cuando se los necesita. Estos principios permiten explicar por qué una amenaza digital puede afectar no solo a un sistema informático, sino también a la continuidad de actividades académicas, administrativas o profesionales.
+
+\subsection{Amenazas y vulnerabilidades}
+
+Las amenazas digitales son acciones o eventos que pueden comprometer la seguridad de un sistema. Entre las más comunes se encuentran el \textit{phishing}, el \textit{malware}, el \textit{ransomware}, los ataques de denegación de servicio, la ingeniería social y el uso indebido de credenciales. Estas amenazas pueden aprovechar tanto fallas técnicas como errores humanos, por lo que la formación en ciberseguridad debe trabajar ambos aspectos.
+
+Las vulnerabilidades son debilidades presentes en sistemas, configuraciones, procedimientos o hábitos de uso. Una contraseña débil, un sistema desactualizado, permisos excesivos o la falta de verificación de enlaces sospechosos pueden convertirse en puntos de entrada para un ataque. Por esta razón, el aprendizaje de ciberseguridad exige que el estudiante comprenda los conceptos y, además, practique su aplicación en situaciones concretas.
+
+\subsection{Factor humano en los incidentes}
+
+Diversos reportes de seguridad señalan que una parte importante de los incidentes se relaciona con acciones humanas, como el uso de credenciales robadas, errores de configuración o respuestas inadecuadas ante engaños digitales. Verizon (2023) destaca la relevancia del factor humano en las brechas de seguridad, lo que refuerza la necesidad de formar usuarios y futuros profesionales capaces de reconocer señales de riesgo y actuar de manera preventiva.
+
+Desde una perspectiva educativa, esto implica que la ciberseguridad no puede enseñarse únicamente como un conjunto de definiciones. El estudiante debe enfrentarse a ejemplos, casos y ejercicios que le permitan tomar decisiones, equivocarse en un entorno seguro y recibir orientación para mejorar su desempeño.
+
+\section{Aprendizaje Práctico de Ciberseguridad}
+
+\subsection{Limitaciones del enfoque teórico}
+
+La enseñanza tradicional de ciberseguridad suele apoyarse en clases expositivas, diapositivas, lecturas y evaluaciones conceptuales. Aunque estos recursos son necesarios para construir una base teórica, resultan insuficientes cuando el objetivo es desarrollar habilidades aplicadas. La identificación de un correo fraudulento, el análisis de una vulnerabilidad o la respuesta ante un incidente requieren práctica guiada y no solo memorización de conceptos.
+
+En asignaturas con grupos numerosos, la dificultad aumenta porque el docente no siempre puede realizar seguimiento individualizado. Esto limita la retroalimentación oportuna y reduce las posibilidades de que el estudiante corrija sus errores durante el proceso de aprendizaje. En consecuencia, puede producirse una distancia entre lo que el estudiante conoce de forma conceptual y lo que realmente puede aplicar frente a un problema.
+
+\subsection{Aprendizaje activo}
+
+El aprendizaje activo plantea que el estudiante participa directamente en la construcción de su conocimiento mediante actividades, resolución de problemas, análisis de casos y toma de decisiones. En ciberseguridad, este enfoque es pertinente porque los contenidos se relacionan con situaciones cambiantes y riesgos reales. El estudiante necesita comprender por qué una acción es segura o insegura, qué consecuencias puede generar y cómo actuar ante un incidente.
+
+Las estrategias activas permiten transformar el contenido teórico en experiencia práctica. Por ejemplo, un tema como \textit{phishing} puede ser explicado conceptualmente, pero se comprende mejor cuando el estudiante analiza mensajes, identifica señales de engaño y decide si una acción representa un riesgo. Esta relación entre teoría y práctica favorece una comprensión más profunda.
+
+\subsection{Retroalimentación inmediata}
+
+La retroalimentación inmediata es un elemento importante en el aprendizaje práctico, ya que permite al estudiante conocer el resultado de sus acciones en el momento en que las realiza. En ciberseguridad, esto es especialmente útil porque una decisión incorrecta puede tener consecuencias críticas en un entorno real. Mediante una simulación educativa, estas consecuencias pueden representarse sin generar daño, permitiendo que el estudiante aprenda del error.
+
+Pacheco, Staino y Sliafertas (2024) señalan que la gamificación aplicada a la educación en ciberseguridad puede favorecer la motivación, la participación y la retención de conocimientos cuando se combina con escenarios prácticos y retroalimentación. Este aporte resulta relevante para el proyecto porque respalda el uso de actividades interactivas como medio para fortalecer habilidades prácticas.
+
+\section{Gamificación y Juegos Serios}
+
+\subsection{Gamificación}
+
+La gamificación consiste en utilizar elementos propios del juego en contextos que no son principalmente recreativos. Entre estos elementos se encuentran los puntos, niveles, retos, recompensas, misiones y tableros de progreso. En educación, su finalidad no debe reducirse a hacer una actividad más entretenida, sino a mejorar la participación del estudiante y organizar el aprendizaje de manera progresiva.
+
+Deterding, Dixon, Khaled y Nacke (2011) definen la gamificación como el uso de elementos de diseño de juego en contextos no lúdicos. Esta definición permite comprender que el valor educativo no está en jugar por jugar, sino en aprovechar ciertas dinámicas del juego para orientar una experiencia formativa. En el presente proyecto, la gamificación sirve para estructurar ejercicios de ciberseguridad, no para desplazar el contenido académico.
+
+\subsection{Juegos serios}
+
+Los juegos serios o \textit{serious games} son aplicaciones interactivas diseñadas con un propósito principal de aprendizaje, entrenamiento o concientización. A diferencia de los videojuegos de entretenimiento, su criterio de éxito no se limita a la diversión, sino a la capacidad de apoyar el desarrollo de conocimientos o habilidades.
+
+Ng y Hasan (2024), en una revisión sistemática sobre juegos serios de ciberseguridad, identifican que estos recursos se han utilizado para entrenar habilidades relacionadas con redes, amenazas, ataques y defensa. Esta evidencia muestra que el uso de juegos serios en ciberseguridad no es una idea aislada, sino una línea de trabajo reconocida en la literatura académica.
+
+\subsection{Relación con la enseñanza de ciberseguridad}
+
+La relación entre gamificación, juegos serios y ciberseguridad se justifica porque los incidentes digitales pueden representarse como escenarios de decisión. El estudiante puede recibir una situación, analizar datos, elegir una acción y observar sus consecuencias. Este proceso se asemeja a la práctica profesional, pero se desarrolla en un entorno controlado.
+
+CyberCIEGE, presentado por Irvine (2005), es uno de los ejemplos clásicos de juego serio aplicado a la seguridad informática. Su propuesta consistía en representar decisiones de seguridad dentro de un entorno simulado. Este tipo de antecedente demuestra que los videojuegos educativos pueden servir como medios para entrenar criterios de seguridad, siempre que estén subordinados a objetivos pedagógicos claros.
+
+\section{Simulación Educativa en Ciberseguridad}
+
+\subsection{Concepto de simulación educativa}
+
+La simulación educativa consiste en recrear una situación, proceso o entorno real para que el estudiante pueda practicar sin exponerse a los riesgos del contexto original. En ciberseguridad, esto es especialmente útil porque no resulta conveniente experimentar con ataques reales sobre sistemas institucionales o personales. La simulación permite trabajar con amenazas, vulnerabilidades y respuestas en un ambiente seguro.
+
+Los laboratorios virtuales, los entornos de práctica y los \textit{cyber ranges} son ejemplos de simulación aplicada a la formación en seguridad. Estos recursos permiten que el estudiante observe comportamientos de amenazas, analice evidencias y aplique medidas de protección. La diferencia principal del presente proyecto es que se propone organizar esa práctica mediante una herramienta educativa gamificada.
+
+\subsection{Escenarios de amenazas digitales}
+
+Un escenario de aprendizaje en ciberseguridad debe representar una situación comprensible y relacionada con problemas reales. Por ejemplo, un escenario de \textit{phishing} puede presentar un correo sospechoso; uno de \textit{malware} puede mostrar señales de infección; y uno de ingeniería social puede plantear una interacción engañosa con un supuesto usuario o atacante. Estos escenarios permiten que el estudiante relacione conceptos con decisiones concretas.
+
+Ramírez (2025), en la plataforma CyberSimU, propone simulaciones de amenazas como \textit{phishing}, \textit{ransomware} y ataques de denegación de servicio para estudiantes universitarios. Su trabajo muestra que la simulación puede emplearse como estrategia de capacitación, especialmente cuando se acompaña de una estructura pedagógica y criterios de evaluación.
+
+\subsection{Progresión de dificultad}
+
+La progresión de dificultad es importante porque permite que el estudiante avance desde tareas simples hacia situaciones más complejas. En lugar de presentar todos los contenidos de una sola vez, la herramienta educativa puede organizar actividades por niveles, comenzando con conceptos básicos y avanzando hacia análisis y respuesta ante incidentes.
+
+Esta progresión reduce la carga cognitiva y facilita que el estudiante construya conocimiento de manera gradual. En ciberseguridad, esto permite iniciar con identificación de riesgos visibles y avanzar hacia escenarios donde se requiere interpretar evidencias, comparar alternativas y justificar decisiones.
+
+\section{Herramientas Tecnológicas como Medio de Apoyo}
+
+De acuerdo con la orientación metodológica recibida, la información sobre motores de videojuegos debe presentarse como apoyo tecnológico y no como el centro del marco teórico. El núcleo conceptual del proyecto es la enseñanza práctica de ciberseguridad; por tanto, las herramientas de desarrollo se entienden como medios para construir la experiencia educativa.
+
+\subsection{Motores de videojuegos}
+
+Los motores de videojuegos son entornos que facilitan la creación de aplicaciones interactivas mediante recursos gráficos, lógica de programación, manejo de escenas, entradas de usuario y despliegue multiplataforma. En un proyecto educativo, su elección debe responder a criterios de facilidad de desarrollo, compatibilidad, rendimiento y capacidad para representar escenarios de aprendizaje.
+
+\subsection{Unity, GameMaker y Godot Engine}
+
+Unity es un motor ampliamente utilizado para aplicaciones interactivas en dos y tres dimensiones, con soporte para múltiples plataformas y una comunidad extensa. GameMaker se orienta principalmente al desarrollo de videojuegos y prototipos interactivos, especialmente en dos dimensiones. Godot Engine es una alternativa de código abierto que permite desarrollar experiencias interactivas y exportarlas a diferentes plataformas.
+
+Estas herramientas pueden apoyar la construcción del videojuego educativo, pero no determinan por sí mismas el valor académico del proyecto. La pertinencia de la propuesta depende de la coherencia entre los contenidos de ciberseguridad, los objetivos de aprendizaje, los escenarios simulados y la retroalimentación ofrecida al estudiante.
+
+\section{Relación del Marco Teórico con el Problema}
+
+El problema identificado en la asignatura de Seguridad de Sistemas se relaciona con la dificultad de fortalecer habilidades prácticas en grupos numerosos y bajo un enfoque predominantemente teórico. La literatura revisada permite sustentar que la ciberseguridad requiere práctica, análisis de casos, toma de decisiones y retroalimentación. Por ello, una herramienta educativa basada en simulación gamificada puede complementar la enseñanza formal.
+
+El marco teórico respalda tres ideas centrales. Primero, la ciberseguridad es un campo práctico donde el factor humano tiene gran importancia. Segundo, el aprendizaje activo y la simulación permiten reducir la brecha entre teoría y aplicación. Tercero, la gamificación y los juegos serios pueden servir como medios pedagógicos cuando están alineados con contenidos y objetivos de aprendizaje.
+
+En consecuencia, el videojuego propuesto no se justifica por sus mecánicas, gráficos o entretenimiento, sino por su capacidad de presentar escenarios controlados de amenazas digitales, guiar la práctica del estudiante y ofrecer retroalimentación inmediata. Esta orientación mantiene el enfoque principal en la enseñanza de ciberseguridad.
+
+\section{Definición de Términos}
+
+\begin{itemize}
+    \item \textbf{Ciberseguridad:} conjunto de prácticas, controles y procesos destinados a proteger sistemas, redes e información frente a amenazas digitales.
+    \item \textbf{Amenaza digital:} acción o evento que puede comprometer la confidencialidad, integridad o disponibilidad de un sistema.
+    \item \textbf{Vulnerabilidad:} debilidad técnica, humana u organizacional que puede ser aprovechada por una amenaza.
+    \item \textbf{Gamificación:} uso de elementos de juego en contextos no lúdicos para favorecer participación, motivación y progreso.
+    \item \textbf{Juego serio:} aplicación interactiva diseñada principalmente con fines educativos, formativos o de entrenamiento.
+    \item \textbf{Simulación educativa:} representación controlada de una situación real para practicar habilidades sin generar riesgos reales.
+    \item \textbf{Retroalimentación inmediata:} respuesta que recibe el estudiante después de una acción, indicando aciertos, errores o consecuencias.
+\end{itemize}
+
+\newpage
+\section{Referencias}
+
+\begin{itemize}
+    \item Deterding, S., Dixon, D., Khaled, R., \& Nacke, L. (2011). From game design elements to gamefulness: Defining gamification. \textit{Proceedings of the 15th International Academic MindTrek Conference}.
+    \item Holman, L. (2020). \textit{Press Play: The Postal Service's Gamification Approach to Cybersecurity Training}. National Institute of Standards and Technology.
+    \item Irvine, C. (2005). CyberCIEGE: A game for computer network security education. \textit{IEEE Security \& Privacy Magazine}.
+    \item Ng, C. Y., \& Hasan, M. K. (2024). Cybersecurity serious games development: A systematic review. \textit{Computers \& Security}.
+    \item Pacheco, F., Staino, D., \& Sliafertas, M. (2024). \textit{Educación en ciberseguridad mediante estrategias de gamificación}. Universidad Tecnológica Nacional.
+    \item Ramírez Vite, K. G. (2025). \textit{Plataforma de simulación en ciberseguridad para la capacitación de estudiantes universitarios} [Tesis de maestría, Universidad Autónoma del Estado de México].
+    \item Verizon. (2023). \textit{Data Breach Investigations Report}.
+\end{itemize}
+
+\end{document}
