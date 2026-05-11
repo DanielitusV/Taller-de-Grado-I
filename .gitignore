@@ -1,5 +1,4 @@
 # LaTeX output
-*.pdf
 *.log
 *.aux
 *.out
@@ -9,9 +8,6 @@
 *.synctex.gz
 *.bbl
 *.blg
-
-# VS Code
-.vscode/
 
 # macOS
 .DS_Store

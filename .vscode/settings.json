@@ -1,0 +1,72 @@
+{
+  "latex-workshop.latex.outDir": "output",
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.synctex.afterBuild.enabled": false,
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk + limpiar_carpetas",
+      "tools": ["latexmk", "limpiar_carpetas"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "limpiar_carpetas",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "if (Test-Path -Path '%OUTDIR%/content') { Remove-Item -Path '%OUTDIR%/content' -Recurse -Force -ErrorAction SilentlyContinue }; if (Test-Path -Path '%OUTDIR%/marco_teorico') { Remove-Item -Path '%OUTDIR%/marco_teorico' -Recurse -Force -ErrorAction SilentlyContinue }"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.clean.fileTypes": [
+    "%OUTDIR%/*.aux",
+    "%OUTDIR%/*.bbl",
+    "%OUTDIR%/*.bcf",
+    "%OUTDIR%/*.blg",
+    "%OUTDIR%/*.fdb_latexmk",
+    "%OUTDIR%/*.fls",
+    "%OUTDIR%/*.glg",
+    "%OUTDIR%/*.glo",
+    "%OUTDIR%/*.gls",
+    "%OUTDIR%/*.idx",
+    "%OUTDIR%/*.ilg",
+    "%OUTDIR%/*.ind",
+    "%OUTDIR%/*.ist",
+    "%OUTDIR%/*.lof",
+    "%OUTDIR%/*.log",
+    "%OUTDIR%/*.lot",
+    "%OUTDIR%/*.nav",
+    "%OUTDIR%/*.out",
+    "%OUTDIR%/*.run.xml",
+    "%OUTDIR%/*.snm",
+    "%OUTDIR%/*.synctex.gz",
+    "%OUTDIR%/*.toc",
+    "%OUTDIR%/*.vrb",
+    "*.aux",
+    "*.bbl",
+    "*.bcf",
+    "*.blg",
+    "*.fdb_latexmk",
+    "*.fls",
+    "*.log",
+    "*.out",
+    "*.run.xml",
+    "*.synctex.gz",
+    "*.toc"
+  ]
+}
