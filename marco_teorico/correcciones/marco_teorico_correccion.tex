@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[letterpaper, margin=2.5cm]{geometry}
+\usepackage{helvet}
+\usepackage{sectsty}
+\usepackage{tocloft}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+
+\sectionfont{\fontsize{14}{17}\selectfont}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\graphicspath{{./}{../}{../../images/}}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    \noindent
+    \begin{minipage}[c]{0.22\textwidth}
+        \centering
+        \includegraphics[width=3cm]{logo-umss.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.52\textwidth}
+        \centering
+        {\small UNIVERSIDAD MAYOR DE SAN SIMÓN \par}
+        \vspace{0.2cm}
+        {\small FACULTAD DE CIENCIAS Y TECNOLOGÍA \par}
+        \vspace{0.2cm}
+        {\small CARRERA DE INGENIERÍA INFORMÁTICA \par}
+    \end{minipage}
+    \begin{minipage}[c]{0.22\textwidth}
+        \centering
+        \includegraphics[width=3cm]{logo-fcyt.png}
+    \end{minipage}
+
+    \vspace{3.5cm}
+
+    {\Large \textbf{Marco Teórico}\par}
+    \vspace{0.6cm}
+    {\large Videojuego educativo de simulación gamificada para el aprendizaje práctico de ciberseguridad dirigido a estudiantes de Informática y Sistemas\par}
+
+    \vspace{2cm}
+
+    \begin{flushleft}
+        \large
+        \textbf{Área:} Ingeniería de Software \\[0.3cm]
+        \textbf{Subárea:} Videojuegos y Gamificación
+    \end{flushleft}
+
+    \begin{flushleft}
+        \large
+        \textbf{Materia:} Taller de Grado I \\[0.3cm]
+        \textbf{Estudiante:} José Daniel Virreira Rufino \\[0.3cm]
+        \textbf{Docente:} Lic. Corina Justina Flores Villaroel \\[0.3cm]
+        \textbf{Grupo:} 6 \\[0.3cm]
+        \textbf{Gestión:} I/2026
+    \end{flushleft}
+
+    \vfill
+
+    {\small Cochabamba - Bolivia\par}
+\end{titlepage}
+
+\onehalfspacing
+
+\tableofcontents
+\newpage
+
+\input{capitulo_01_ciberseguridad}
+\input{capitulo_02_aprendizaje_y_gamificacion}
+
+\section{Definición de términos}
+
+\begin{itemize}
+    \item \textbf{Ciberseguridad:} conjunto de prácticas orientadas a proteger sistemas, redes, dispositivos e información frente a amenazas digitales.
+    \item \textbf{Amenaza digital:} evento o acción que puede comprometer la confidencialidad, integridad o disponibilidad de un sistema.
+    \item \textbf{Vulnerabilidad:} debilidad técnica, humana u organizacional que puede ser aprovechada por una amenaza.
+    \item \textbf{Gamificación:} uso de elementos de juego en contextos no lúdicos con fines de motivación y apoyo al aprendizaje.
+    \item \textbf{Juego serio:} aplicación interactiva diseñada principalmente para enseñar, entrenar o concientizar.
+    \item \textbf{Retroalimentación inmediata:} respuesta que recibe el usuario después de una acción, indicando aciertos, errores o consecuencias.
+\end{itemize}
+
+\newpage
+\section{Referencias}
+
+\begin{itemize}
+    \item National Institute of Standards and Technology. (s. f.). \textit{Cybersecurity}. Computer Security Resource Center Glossary. \url{https://csrc.nist.gov/glossary/term/cybersecurity}
+
+    \item National Institute of Standards and Technology. (s. f.). \textit{Confidentiality}. Computer Security Resource Center Glossary. \url{https://csrc.nist.gov/glossary/term/confidentiality}
+
+    \item National Institute of Standards and Technology. (s. f.). \textit{Integrity}. Computer Security Resource Center Glossary. \url{https://csrc.nist.gov/glossary/term/integrity}
+
+    \item National Institute of Standards and Technology. (s. f.). \textit{Availability}. Computer Security Resource Center Glossary. \url{https://csrc.nist.gov/glossary/term/availability}
+
+    \item Verizon. (2026). \textit{2026 Data Breach Investigations Report}. \url{https://www.verizon.com/business/resources/reports/dbir/}
+
+    \item Freeman, S., Eddy, S. L., McDonough, M., Smith, M. K., Okoroafor, N., Jordt, H., \& Wenderoth, M. P. (2014). Active learning increases student performance in science, engineering, and mathematics. \textit{Proceedings of the National Academy of Sciences, 111}(23), 8410--8415. \url{https://doi.org/10.1073/pnas.1319030111}
+
+    \item Hattie, J., \& Timperley, H. (2007). The power of feedback. \textit{Review of Educational Research, 77}(1), 81--112. \url{https://doi.org/10.3102/003465430298487}
+
+    \item Seda, P., Vykopal, J., Švábenský, V., \& Čeleda, P. (2022). \textit{Reinforcing cybersecurity hands-on training with adaptive learning}. arXiv. \url{https://arxiv.org/abs/2201.01574}
+
+    \item Vykopal, J., Čeleda, P., Seda, P., Švábenský, V., \& Tovarňák, D. (2021). \textit{Scalable learning environments for teaching cybersecurity hands-on}. arXiv. \url{https://arxiv.org/abs/2110.10004}
+\end{itemize}
+
+\end{document}
