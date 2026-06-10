@@ -28,7 +28,7 @@
       "args": [
         "-NoProfile",
         "-Command",
-        "if (Test-Path -Path '%OUTDIR%/content') { Remove-Item -Path '%OUTDIR%/content' -Recurse -Force -ErrorAction SilentlyContinue }; if (Test-Path -Path '%OUTDIR%/marco_teorico') { Remove-Item -Path '%OUTDIR%/marco_teorico' -Recurse -Force -ErrorAction SilentlyContinue }"
+        "if (Test-Path -Path '%OUTDIR%/01_Perfil_content') { Remove-Item -Path '%OUTDIR%/01_Perfil_content' -Recurse -Force -ErrorAction SilentlyContinue }; if (Test-Path -Path '%OUTDIR%/02_Cap_marco_teorico') { Remove-Item -Path '%OUTDIR%/02_Cap_marco_teorico' -Recurse -Force -ErrorAction SilentlyContinue }; if (Test-Path -Path '%OUTDIR%/03_Cap_area_aplicacion') { Remove-Item -Path '%OUTDIR%/03_Cap_area_aplicacion' -Recurse -Force -ErrorAction SilentlyContinue }; if (Test-Path -Path '%OUTDIR%/04_informe_pre_experimento') { Remove-Item -Path '%OUTDIR%/04_informe_pre_experimento' -Recurse -Force -ErrorAction SilentlyContinue }"
       ],
       "env": {}
     }
