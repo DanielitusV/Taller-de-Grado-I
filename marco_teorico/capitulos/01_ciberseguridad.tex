@@ -1,50 +1,50 @@
-\section[Capítulo 1: Ciberseguridad en la Educación Superior]{\centering Capítulo 1: Ciberseguridad en la Educación Superior}
+\section[Cap\'{i}tulo 1: Ciberseguridad en la Educaci\'{o}n Superior]{\centering Cap\'{i}tulo 1: Ciberseguridad en la Educaci\'{o}n Superior}
 
-La ciberseguridad es el punto de partida del proyecto porque define el tipo de problemas que el videojuego busca representar. En una carrera informática, este campo no debería tratarse solamente como teoría, sino como una competencia práctica para proteger información, sistemas y servicios frente a riesgos digitales (NIST, 2024).
+La ciberseguridad es el punto de partida del proyecto porque define el tipo de problemas que el videojuego busca representar. En una carrera inform\'{a}tica, este campo no deber\'{i}a tratarse solamente como teor\'{i}a, sino como una competencia pr\'{a}ctica para proteger informaci\'{o}n, sistemas y servicios frente a riesgos digitales (NIST, 2024).
 
-Este capítulo reúne conceptos base sobre seguridad de la información, amenazas, vulnerabilidades y factor humano. Estos elementos permiten justificar por qué un simulador puede apoyar la formación de estudiantes que necesitan analizar casos, reconocer señales de riesgo y decidir respuestas apropiadas (ISO/IEC, 2022).
+Este cap\'{i}tulo re\'{u}ne conceptos base sobre seguridad de la informaci\'{o}n, amenazas, vulnerabilidades y factor humano. Estos elementos permiten justificar por qu\'{e} un simulador puede apoyar la formaci\'{o}n de estudiantes que necesitan analizar casos, reconocer se\~{n}ales de riesgo y decidir respuestas apropiadas (ISO/IEC, 2022).
 
 \subsection{Concepto de ciberseguridad}
 
-La ciberseguridad comprende prácticas, procesos y controles orientados a proteger sistemas, redes, dispositivos e información frente a accesos no autorizados, alteraciones, interrupciones o ataques. Sus principios más conocidos son confidencialidad, integridad y disponibilidad, porque resumen qué se busca proteger en un sistema digital (Stallings \& Brown, 2018).
+La ciberseguridad comprende pr\'{a}cticas, procesos y controles orientados a proteger sistemas, redes, dispositivos e informaci\'{o}n frente a accesos no autorizados, alteraciones, interrupciones o ataques. Sus principios m\'{a}s conocidos son confidencialidad, integridad y disponibilidad, porque resumen qu\'{e} se busca proteger en un sistema digital (Stallings \& Brown, 2018).
 
-\begin{longtable}{|p{0.24\textwidth}|p{0.58\textwidth}|}
+\begin{center}
+\begin{tabular}{|p{0.24\textwidth}|p{0.58\textwidth}|}
 \hline
-\textbf{Principio} & \textbf{Relación con el proyecto} \\
+\textbf{Principio} & \textbf{Relaci\'{o}n con el proyecto} \\
 \hline
-Confidencialidad & Evitar que credenciales, datos personales o información institucional sean expuestos por engaños o accesos indebidos (NIST, 2024). \\
+Confidencialidad & Evitar que credenciales, datos personales o informaci\'{o}n institucional sean expuestos por enga\~{n}os o accesos indebidos (NIST, 2024). \\
 \hline
-Integridad & Reconocer alteraciones en mensajes, archivos, registros o procesos que podrían indicar una actividad maliciosa (Stallings \& Brown, 2018). \\
+Integridad & Reconocer alteraciones en mensajes, archivos, registros o procesos que podr\'{i}an indicar actividad maliciosa (Stallings \& Brown, 2018). \\
 \hline
-Disponibilidad & Comprender que una mala decisión puede afectar servicios, equipos o continuidad de trabajo dentro de un escenario simulado (ISO/IEC, 2022). \\
+Disponibilidad & Comprender que una mala decisi\'{o}n puede afectar servicios, equipos o continuidad de trabajo dentro de un escenario simulado (ISO/IEC, 2022). \\
 \hline
-\end{longtable}
+\end{tabular}
+\end{center}
 
-En el videojuego, estos principios se traducen en situaciones concretas: un correo falso puede comprometer credenciales, un archivo malicioso puede modificar información y un equipo infectado puede dejar de operar. De esta forma, la teoría se relaciona con decisiones visibles dentro de un escenario de juego (NIST, 2024).
+En el videojuego, estos principios se traducen en situaciones concretas: un correo falso puede comprometer credenciales, un archivo malicioso puede modificar informaci\'{o}n y un equipo infectado puede dejar de operar. De esta forma, la teor\'{i}a se relaciona con decisiones visibles dentro de un escenario de juego (NIST, 2024).
 
 \subsection{Amenazas y vulnerabilidades}
 
-Una amenaza digital es una acción o evento capaz de causar daño, mientras que una vulnerabilidad es una debilidad que puede ser aprovechada. Esta diferencia es importante porque permite analizar un incidente no solo desde el ataque, sino también desde las condiciones que facilitaron que ocurra (ISO/IEC, 2022).
+Una amenaza digital es una acci\'{o}n o evento capaz de causar da\~{n}o, mientras que una vulnerabilidad es una debilidad que puede ser aprovechada. Esta diferencia es importante porque permite analizar un incidente no solo desde el ataque, sino tambi\'{e}n desde las condiciones que facilitaron que ocurra (ISO/IEC, 2022).
 
-Para el proyecto se consideran amenazas iniciales que pueden representarse con claridad en un videojuego educativo:
+Para el proyecto se consideran amenazas iniciales que pueden representarse con claridad en un videojuego educativo y que aparecen de forma recurrente en reportes de incidentes de seguridad (Verizon, 2024):
 
 \begin{itemize}
-    \item \textit{Phishing}: mensajes que imitan comunicaciones legítimas para robar información o credenciales (Verizon, 2024).
-    \item Malware: software malicioso que altera, bloquea, roba o destruye información (Stallings \& Brown, 2018).
-    \item Ingeniería social: manipulación de personas para obtener accesos, códigos o datos sensibles (Verizon, 2024).
-    \item Ransomware: ataque que cifra información y exige pago para recuperarla (Verizon, 2024).
+    \item \textit{Phishing}: mensajes que imitan comunicaciones leg\'{i}timas para robar informaci\'{o}n o credenciales (Verizon, 2024).
+    \item Malware: software malicioso que altera, bloquea, roba o destruye informaci\'{o}n (Stallings \& Brown, 2018).
+    \item Ingenier\'{i}a social: manipulaci\'{o}n de personas para obtener accesos, c\'{o}digos o datos sensibles (Verizon, 2024).
+    \item Ransomware: ataque que cifra informaci\'{o}n y exige pago para recuperarla (Verizon, 2024).
 \end{itemize}
 
-Las vulnerabilidades no siempre dependen de fallas técnicas. También pueden surgir por contraseñas débiles, sistemas sin actualizar, permisos excesivos o falta de verificación de enlaces. Por eso, el videojuego debe presentar pistas que obliguen al estudiante a mirar detalles antes de decidir (Stallings \& Brown, 2018).
+Las vulnerabilidades no siempre dependen de fallas t\'{e}cnicas. Tambi\'{e}n pueden surgir por contrase\~{n}as d\'{e}biles, sistemas sin actualizar, permisos excesivos o falta de verificaci\'{o}n de enlaces. Por eso, el videojuego debe presentar pistas que obliguen al estudiante a mirar detalles antes de decidir (Stallings \& Brown, 2018).
 
 \subsection{Factor humano en los incidentes}
 
-El factor humano tiene un peso importante en los incidentes de seguridad, especialmente cuando existen credenciales robadas, errores de configuración o respuestas apresuradas ante mensajes engañosos. Esta realidad hace necesario trabajar la formación desde escenarios donde el estudiante pueda equivocarse y revisar consecuencias sin afectar sistemas reales (Verizon, 2024).
+El factor humano tiene un peso importante en los incidentes de seguridad, especialmente cuando existen credenciales robadas, errores de configuraci\'{o}n o respuestas apresuradas ante mensajes enga\~{n}osos. Esta realidad hace necesario trabajar la formaci\'{o}n desde escenarios donde el estudiante pueda equivocarse y revisar consecuencias sin afectar sistemas reales (Verizon, 2024).
 
-En el proyecto, este aspecto se refleja en correos sospechosos, llamadas de supuesto soporte, enlaces con dominios alterados y decisiones de contención. La intención es que el estudiante practique una forma de razonamiento profesional: observar, comparar, sospechar con fundamento y actuar según el nivel de riesgo (NIST, 2024).
+En el proyecto, este aspecto se refleja en correos sospechosos, llamadas de supuesto soporte, enlaces con dominios alterados y decisiones de contenci\'{o}n. La intenci\'{o}n es que el estudiante practique una forma de razonamiento profesional: observar, comparar, sospechar con fundamento y actuar seg\'{u}n el nivel de riesgo (NIST, 2024).
 
-\subsection{Síntesis del capítulo}
+\subsection{S\'{i}ntesis del cap\'{i}tulo}
 
-La ciberseguridad aporta el contenido central que el videojuego debe representar. Los conceptos de amenaza, vulnerabilidad, riesgo y factor humano permiten diseñar casos donde el estudiante no solo reconoce definiciones, sino que aplica criterios de seguridad en situaciones concretas (ISO/IEC, 2022).
-
-\newpage
+La ciberseguridad aporta el contenido central que el videojuego debe representar. Los conceptos de amenaza, vulnerabilidad, riesgo y factor humano permiten dise\~{n}ar casos donde el estudiante no solo reconoce definiciones, sino que aplica criterios de seguridad en situaciones concretas.

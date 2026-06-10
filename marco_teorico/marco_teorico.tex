@@ -1,25 +1,29 @@
 \documentclass[12pt]{article}
 
-\usepackage[spanish]{babel}
+\usepackage[spanish,shorthands=off]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage[letterpaper, margin=2.5cm]{geometry}
 \usepackage{helvet}
-\usepackage{sectsty}
+\usepackage{csquotes}
 \usepackage{tocloft}
 \usepackage{parskip}
 \usepackage{setspace}
 \usepackage{array}
-\usepackage{longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{capitulos/referencias.bib}
 
-\sectionfont{\fontsize{14}{17}\selectfont}
 \renewcommand{\familydefault}{\sfdefault}
-\renewcommand{\contentsname}{Índice}
+\renewcommand{\contentsname}{\'{I}ndice}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
 \graphicspath{{../images/}}
+\setcounter{secnumdepth}{0}
 
 \begin{document}
 
@@ -33,11 +37,11 @@
     \end{minipage}
     \begin{minipage}[c]{0.52\textwidth}
         \centering
-        {\small UNIVERSIDAD MAYOR DE SAN SIMÓN \par}
+        {\small UNIVERSIDAD MAYOR DE SAN SIM\'{O}N \par}
         \vspace{0.2cm}
-        {\small FACULTAD DE CIENCIAS Y TECNOLOGÍA \par}
+        {\small FACULTAD DE CIENCIAS Y TECNOLOG\'{I}A \par}
         \vspace{0.2cm}
-        {\small CARRERA DE INGENIERÍA INFORMÁTICA \par}
+        {\small CARRERA DE INGENIER\'{I}A INFORM\'{A}TICA \par}
     \end{minipage}
     \begin{minipage}[c]{0.22\textwidth}
         \centering
@@ -46,25 +50,25 @@
 
     \vspace{3.5cm}
 
-    {\Large \textbf{Marco Teórico}\par}
+    {\Large \textbf{Marco Te\'{o}rico}\par}
     \vspace{0.6cm}
-    {\large Videojuego educativo de simulación gamificada para el aprendizaje práctico de ciberseguridad dirigido a estudiantes de Informática y Sistemas\par}
+    {\large Videojuego educativo de simulaci\'{o}n gamificada para el aprendizaje pr\'{a}ctico de ciberseguridad dirigido a estudiantes de Inform\'{a}tica y Sistemas\par}
 
     \vspace{2cm}
 
     \begin{flushleft}
         \large
-        \textbf{Área:} Ingeniería de Software \\[0.3cm]
-        \textbf{Subárea:} Videojuegos y Gamificación
+        \textbf{\'{A}rea:} Ingenier\'{i}a de Software \\[0.3cm]
+        \textbf{Sub\'{a}rea:} Videojuegos y Gamificaci\'{o}n
     \end{flushleft}
 
     \begin{flushleft}
         \large
         \textbf{Materia:} Taller de Grado I \\[0.3cm]
-        \textbf{Estudiante:} José Daniel Virreira Rufino \\[0.3cm]
+        \textbf{Estudiante:} Jos\'{e} Daniel Virreira Rufino \\[0.3cm]
         \textbf{Docente:} Lic. Corina Justina Flores Villaroel \\[0.3cm]
         \textbf{Grupo:} 6 \\[0.3cm]
-        \textbf{Gestión:} I/2026
+        \textbf{Gesti\'{o}n:} I/2026
     \end{flushleft}
 
     \vfill
@@ -80,6 +84,8 @@
 \input{capitulos/01_ciberseguridad}
 \input{capitulos/02_aprendizaje}
 \input{capitulos/03_gamificacion}
+\input{capitulos/04_amenazas}
+\input{capitulos/05_herramientas}
 \input{capitulos/referencias}
 
 \end{document}
