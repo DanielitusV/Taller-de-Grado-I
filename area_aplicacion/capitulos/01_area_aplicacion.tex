@@ -1,0 +1,157 @@
+\section[Cap\'{i}tulo III: \'{A}rea de Aplicaci\'{o}n]{\centering Cap\'{i}tulo III: \'{A}rea de Aplicaci\'{o}n}
+
+\subsection{Introducci\'{o}n}
+
+El presente cap\'{i}tulo describe el \'{a}rea donde se aplicar\'{a} el videojuego educativo de simulaci\'{o}n gamificada. En este documento no se desarrolla nuevamente el marco te\'{o}rico, sino que se muestra c\'{o}mo los conceptos de ciberseguridad, aprendizaje pr\'{a}ctico y gamificaci\'{o}n se concretan en un entorno de aplicaci\'{o}n para estudiantes de Inform\'{a}tica y Sistemas.
+
+El proyecto se aplicar\'{a} como una herramienta complementaria para practicar identificaci\'{o}n y respuesta ante incidentes b\'{a}sicos de ciberseguridad. El prototipo no trabajar\'{a} sobre redes reales ni ejecutar\'{a} ataques reales; funcionar\'{a} mediante escenarios simulados donde el estudiante analiza pistas, toma decisiones y recibe retroalimentaci\'{o}n al finalizar cada caso.
+
+\subsection{Contexto del \'{a}rea de aplicaci\'{o}n}
+
+El \'{a}rea de aplicaci\'{o}n corresponde al aprendizaje pr\'{a}ctico de ciberseguridad en estudiantes de Ingenier\'{i}a Inform\'{a}tica e Ingenier\'{i}a de Sistemas de la Universidad Mayor de San Sim\'{o}n. En este contexto, la ciberseguridad requiere que el estudiante relacione conocimientos, habilidades y tareas, tal como plantea el marco NICE del NIST \parencite{nist2020nice}.
+
+La necesidad de aplicaci\'{o}n surge porque las amenazas digitales no siempre se resuelven memorizando conceptos. El estudiante debe observar se\~{n}ales, comparar datos, reconocer comportamientos sospechosos y elegir respuestas adecuadas. Por ello, el videojuego se ubica como un recurso de pr\'{a}ctica guiada, seguro y repetible.
+
+\begin{center}
+\textbf{Tabla 3.1}\\
+\textit{Contexto de aplicaci\'{o}n del prototipo}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{0.30\textwidth}|p{0.55\textwidth}|}
+\hline
+\textbf{Elemento} & \textbf{Descripci\'{o}n} \\
+\hline
+Instituci\'{o}n & Universidad Mayor de San Sim\'{o}n. \\
+\hline
+Poblaci\'{o}n objetivo & Estudiantes de Ingenier\'{i}a Inform\'{a}tica e Ingenier\'{i}a de Sistemas. \\
+\hline
+Campo de aplicaci\'{o}n & Aprendizaje pr\'{a}ctico de ciberseguridad. \\
+\hline
+Tipo de herramienta & Videojuego educativo de simulaci\'{o}n gamificada. \\
+\hline
+Modalidad de uso & Prototipo monojugador con escenarios controlados. \\
+\hline
+\end{tabular}
+
+\textit{Fuente: Elaboraci\'{o}n propia.}
+\end{center}
+
+\subsection{Usuarios e interesados}
+
+Los usuarios principales del prototipo son los estudiantes, quienes interact\'{u}an directamente con los escenarios y toman decisiones frente a eventos sospechosos. Los docentes se consideran interesados secundarios, ya que pueden utilizar el videojuego como apoyo para reforzar contenidos y analizar resultados generales de desempe\~{n}o.
+
+\begin{center}
+\textbf{Tabla 3.2}\\
+\textit{Identificaci\'{o}n de usuarios e interesados}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{0.25\textwidth}|p{0.32\textwidth}|p{0.28\textwidth}|}
+\hline
+\textbf{Usuario o interesado} & \textbf{Descripci\'{o}n} & \textbf{Responsabilidad o inter\'{e}s} \\
+\hline
+Estudiante & Usuario principal del videojuego. & Analizar eventos, tomar decisiones y revisar la retroalimentaci\'{o}n. \\
+\hline
+Docente & Usuario indirecto o de apoyo. & Usar el prototipo como recurso complementario para reforzar contenidos. \\
+\hline
+Instituci\'{o}n & Entorno acad\'{e}mico donde se ubica el proyecto. & Fortalecer recursos de formaci\'{o}n pr\'{a}ctica en ciberseguridad. \\
+\hline
+\end{tabular}
+
+\textit{Fuente: Elaboraci\'{o}n propia.}
+\end{center}
+
+\subsection{Descripci\'{o}n de la soluci\'{o}n propuesta}
+
+La soluci\'{o}n propuesta consiste en un videojuego educativo donde el jugador asume el rol de analista de seguridad en un centro de operaciones simulado. Durante cada escenario, el jugador revisa correos, alertas, registros y comunicaciones sospechosas para decidir si corresponde aprobar, bloquear, reportar, escalar o contener un evento.
+
+El escenario base se plantea en una organizaci\'{o}n ficticia, por ejemplo NovaTech S.A., con el objetivo de representar un contexto laboral sin comprometer infraestructura real. Las amenazas iniciales son \textit{phishing}, malware e ingenier\'{i}a social, debido a que pueden presentarse mediante pistas visibles y decisiones comprensibles para el estudiante. La relevancia del factor humano en incidentes de seguridad justifica este enfoque de simulaci\'{o}n \parencite{verizon2025dbir}.
+
+\begin{center}
+\textbf{Tabla 3.3}\\
+\textit{Soluci\'{o}n propuesta seg\'{u}n necesidad identificada}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{0.28\textwidth}|p{0.28\textwidth}|p{0.29\textwidth}|}
+\hline
+\textbf{Necesidad} & \textbf{Soluci\'{o}n propuesta} & \textbf{Resultado esperado} \\
+\hline
+Practicar identificaci\'{o}n de amenazas. & Escenarios con correos, alertas y llamadas sospechosas. & Mayor capacidad para reconocer indicios de riesgo. \\
+\hline
+Tomar decisiones ante incidentes. & Acciones de reportar, bloquear, escalar o contener. & Entrenamiento b\'{a}sico de respuesta ante eventos. \\
+\hline
+Recibir retroalimentaci\'{o}n clara. & Reporte de turno al finalizar cada escenario. & Comprensi\'{o}n de consecuencias de las decisiones. \\
+\hline
+Mantener un entorno seguro. & Simulaci\'{o}n sin redes, ataques ni sistemas reales. & Pr\'{a}ctica sin comprometer infraestructura. \\
+\hline
+\end{tabular}
+
+\textit{Fuente: Elaboraci\'{o}n propia.}
+\end{center}
+
+\subsection{M\'{o}dulos del prototipo}
+
+El prototipo se organiza en m\'{o}dulos que representan actividades frecuentes dentro de un escenario de seguridad. Esta organizaci\'{o}n permite separar las tareas del jugador y presentar informaci\'{o}n de forma progresiva.
+
+\begin{center}
+\textbf{Tabla 3.4}\\
+\textit{M\'{o}dulos principales del prototipo}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{0.25\textwidth}|p{0.36\textwidth}|p{0.24\textwidth}|}
+\hline
+\textbf{M\'{o}dulo} & \textbf{Funci\'{o}n} & \textbf{Amenaza relacionada} \\
+\hline
+Mapa de casos & Organiza niveles y progresi\'{o}n de dificultad. & Todas las amenazas. \\
+\hline
+Bandeja de correo & Presenta mensajes con dominios alterados, urgencia falsa o adjuntos sospechosos. & \textit{Phishing} y malware. \\
+\hline
+Consola de eventos & Muestra registros, alertas y actividad an\'{o}mala. & Malware y respuesta a incidentes. \\
+\hline
+L\'{i}nea telef\'{o}nica & Representa solicitudes sospechosas de datos, c\'{o}digos o accesos. & Ingenier\'{i}a social. \\
+\hline
+Reporte de turno & Resume aciertos, errores y consecuencias. & Retroalimentaci\'{o}n del escenario. \\
+\hline
+\end{tabular}
+
+\textit{Fuente: Elaboraci\'{o}n propia.}
+\end{center}
+
+\subsection{Flujo de aplicaci\'{o}n}
+
+El flujo de uso del prototipo inicia con la selecci\'{o}n de un caso. Luego, el jugador ingresa al escenario activo y revisa los eventos disponibles. Cada evento exige observar pistas antes de seleccionar una respuesta. Al finalizar, el sistema presenta un reporte con consecuencias.
+
+\begin{center}
+\textbf{Tabla 3.5}\\
+\textit{Flujo general de uso}
+
+\vspace{0.2cm}
+\begin{tabular}{|p{0.15\textwidth}|p{0.45\textwidth}|p{0.25\textwidth}|}
+\hline
+\textbf{Paso} & \textbf{Actividad del jugador} & \textbf{Resultado} \\
+\hline
+1 & Ingresar al prototipo y revisar el mapa de casos. & Selecci\'{o}n del escenario. \\
+\hline
+2 & Revisar correos, alertas o llamadas dentro del turno. & Identificaci\'{o}n de pistas. \\
+\hline
+3 & Elegir una acci\'{o}n: aprobar, bloquear, reportar, escalar o contener. & Registro de la decisi\'{o}n. \\
+\hline
+4 & Finalizar el caso. & Generaci\'{o}n del reporte de turno. \\
+\hline
+5 & Revisar consecuencias. & Retroalimentaci\'{o}n para mejorar decisiones futuras. \\
+\hline
+\end{tabular}
+
+\textit{Fuente: Elaboraci\'{o}n propia.}
+\end{center}
+
+\subsection{Relaci\'{o}n con el aprendizaje pr\'{a}ctico}
+
+El \'{a}rea de aplicaci\'{o}n se vincula con el aprendizaje pr\'{a}ctico porque convierte conceptos de ciberseguridad en situaciones jugables. La gamificaci\'{o}n aporta retos, progresi\'{o}n y motivaci\'{o}n \parencite{kapp2012gamification}, mientras que la retroalimentaci\'{o}n permite que el estudiante comprenda la distancia entre su decisi\'{o}n y el desempe\~{n}o esperado \parencite{hattie2007feedback}.
+
+Adem\'{a}s, las acciones propuestas se relacionan con fases b\'{a}sicas de manejo de incidentes, como identificaci\'{o}n, contenci\'{o}n y comunicaci\'{o}n \parencite{cichonski2022incident}. De esta manera, el videojuego no se limita a mostrar contenidos, sino que permite practicar una secuencia de razonamiento: observar, analizar, decidir y revisar consecuencias.
+
+\subsection{S\'{i}ntesis del cap\'{i}tulo}
+
+El \'{a}rea de aplicaci\'{o}n del proyecto se centra en el aprendizaje pr\'{a}ctico de ciberseguridad mediante un videojuego de simulaci\'{o}n. La propuesta se dirige a estudiantes de Inform\'{a}tica y Sistemas, utiliza un entorno ficticio tipo centro de operaciones de seguridad y organiza la experiencia mediante m\'{o}dulos, casos y reportes de retroalimentaci\'{o}n.
+
+La estructura propuesta permite aplicar conceptos de \textit{phishing}, malware, ingenier\'{i}a social y respuesta a incidentes en un entorno seguro. Por tanto, el Cap\'{i}tulo III establece el espacio concreto donde el proyecto puede desarrollarse y validarse como herramienta educativa complementaria.
