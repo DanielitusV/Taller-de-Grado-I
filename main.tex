@@ -1,18 +1,21 @@
 \documentclass[12pt]{article}
 
-\usepackage[spanish]{babel}
+\usepackage[spanish,shorthands=off]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage[letterpaper, margin=2.5cm]{geometry}
 \usepackage{helvet}
-\usepackage{sectsty}
 \usepackage{enumitem}
 \usepackage{tocloft}
 \usepackage{parskip}
 \usepackage{setspace}
-
-\sectionfont{\fontsize{14}{17}\selectfont}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{content/references.bib}
 
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
@@ -28,17 +31,23 @@
 
 \onehalfspacing
 
-\renewcommand{\contentsname}{Índice}
+\renewcommand{\contentsname}{\'{I}ndice}
+\addcontentsline{toc}{section}{\'{I}ndice}
 \tableofcontents
 \newpage
 
+\input{content/Introduccion}
 \input{content/Antecedentes}
 \input{content/Planteamiento_del_Problema}
 \input{content/Objetivos}
 \input{content/Justificacion}
-\section{Alcances y Límites}
+\section{Alcances y L\'{i}mites}
 \input{content/Alcances}
 \input{content/Limites}
+\input{content/Diseno_Metodologico}
+\input{content/Cronograma}
+
+\newpage
 \input{content/Referencias}
 
 \end{document}
