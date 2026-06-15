@@ -1,0 +1,287 @@
+﻿\documentclass[12pt]{article}
+
+\usepackage[spanish,shorthands=off]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[letterpaper, margin=2.5cm]{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\contentsname}{\'{I}ndice}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\graphicspath{{../images/}}
+\setlength{\parindent}{1.27cm}
+\setlength{\parskip}{0pt}
+\setlist[itemize,1]{label=\textbullet,leftmargin=*}
+\setlist[enumerate,1]{leftmargin=*}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+
+\definecolor{cybaccent}{HTML}{00D1B2}
+\definecolor{cybdark}{HTML}{111827}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    \noindent
+    \begin{minipage}[c]{0.22\textwidth}
+        \centering
+        \includegraphics[width=3cm]{logo-umss.png}
+    \end{minipage}
+    \begin{minipage}[c]{0.52\textwidth}
+        \centering
+        {\small UNIVERSIDAD MAYOR DE SAN SIM\'{O}N \par}
+        \vspace{0.2cm}
+        {\small FACULTAD DE CIENCIAS Y TECNOLOG\'{I}A \par}
+        \vspace{0.2cm}
+        {\small CARRERA DE INGENIER\'{I}A INFORM\'{A}TICA \par}
+    \end{minipage}
+    \begin{minipage}[c]{0.22\textwidth}
+        \centering
+        \includegraphics[width=3cm]{logo-fcyt.png}
+    \end{minipage}
+
+    \vspace{3.2cm}
+
+    {\Large \textbf{Informe Pre-experimento}\par}
+    \vspace{0.7cm}
+    {\large Videojuego educativo de simulaci\'{o}n gamificada para el aprendizaje pr\'{a}ctico de ciberseguridad dirigido a estudiantes de Inform\'{a}tica y Sistemas\par}
+
+    \vspace{2cm}
+
+    \begin{flushleft}
+        \large
+        \textbf{\'{A}rea:} Ingenier\'{i}a de Software \\[0.3cm]
+        \textbf{Sub\'{a}rea:} Videojuegos y Gamificaci\'{o}n
+    \end{flushleft}
+
+    \begin{flushleft}
+        \large
+        \textbf{Materia:} Taller de Grado I \\[0.3cm]
+        \textbf{Estudiante:} Jos\'{e} Daniel Virreira Rufino \\[0.3cm]
+        \textbf{Docente:} Lic. Corina Justina Flores Villaroel \\[0.3cm]
+        \textbf{Grupo:} 6 \\[0.3cm]
+        \textbf{Gesti\'{o}n:} I/2026
+    \end{flushleft}
+
+    \vfill
+
+    {\small Cochabamba - Bolivia\par}
+\end{titlepage}
+
+\onehalfspacing
+
+\tableofcontents
+\newpage
+
+\begin{center}
+    {\Large \textbf{Videojuego CybOps - Pre Experimento}}
+\end{center}
+
+\section{Introducci\'{o}n}
+
+El presente informe describe el pre-experimento realizado para validar una primera maqueta funcional del videojuego educativo \textit{CybOps}, orientado al aprendizaje pr\'{a}ctico de ciberseguridad. La propuesta busca que el estudiante no reciba el contenido \'{u}nicamente como explicaci\'{o}n te\'{o}rica, sino como una situaci\'{o}n de simulaci\'{o}n donde debe observar, analizar, decidir y revisar consecuencias.
+
+En esta etapa no se pretendi\'{o} medir todav\'{i}a el aprendizaje con una muestra amplia de usuarios. El prop\'{o}sito fue comprobar si el concepto del juego, el escenario propuesto, las pantallas principales y las mec\'{a}nicas iniciales responden al problema identificado en el proyecto: la falta de pr\'{a}ctica guiada y retroalimentaci\'{o}n clara en el aprendizaje de ciberseguridad.
+
+El pre-experimento se desarroll\'{o} mediante un prototipo navegable en Figma y una demostraci\'{o}n en video. El prototipo no corresponde al videojuego final, sino a una representaci\'{o}n inicial del flujo, la interfaz, la estructura de navegaci\'{o}n y las mec\'{a}nicas educativas principales.
+
+\section{Objetivo o Aspecto Evaluado}
+
+El objetivo espec\'{i}fico del pre-experimento fue validar si un prototipo de simulaci\'{o}n gamificada puede representar situaciones b\'{a}sicas de ciberseguridad mediante toma de decisiones, sin romper la l\'{o}gica de juego y sin convertir la experiencia en una clase tradicional.
+
+Se evaluaron cuatro aspectos puntuales:
+
+\begin{itemize}
+    \item Si el rol de analista de seguridad resulta comprensible para el jugador.
+    \item Si las pantallas permiten trabajar amenazas como \textit{phishing}, malware e ingenier\'{i}a social.
+    \item Si las mec\'{a}nicas de observaci\'{o}n, comparaci\'{o}n de datos y decisi\'{o}n funcionan dentro del escenario.
+    \item Si la retroalimentaci\'{o}n puede presentarse como consecuencia o reporte de turno, evitando explicaciones demasiado escolares.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{4cm}|p{9cm}|}
+\hline
+\textbf{Aspecto evaluado} & \textbf{Evidencia en el prototipo} \\ \hline
+Rol del jugador & Perfil del analista, estaci\'{o}n de trabajo y HUD de simulaci\'{o}n. \\ \hline
+Amenazas representadas & Escenarios de \textit{phishing}, malware, ingenier\'{i}a social y respuesta a incidentes. \\ \hline
+Toma de decisiones & Botones para reportar, marcar como leg\'{i}timo, pedir an\'{a}lisis o ejecutar acciones simuladas. \\ \hline
+Retroalimentaci\'{o}n & Panel de feedback inmediato, bit\'{a}cora y propuesta de reporte de turno. \\ \hline
+Apoyo educativo & Pantallas de tutorial y manual interno para guiar al jugador. \\ \hline
+\end{tabular}
+\caption{Aspectos evaluados en el pre-experimento.}
+\end{table}
+
+\section{Procedimiento, Herramientas y Metodolog\'{i}a}
+
+Se trabaj\'{o} con una maqueta funcional en formato de prototipo navegable. No se busc\'{o} implementar el videojuego final, sino construir una versi\'{o}n inicial que permitiera revisar estructura, pantallas, navegaci\'{o}n y l\'{o}gica de interacci\'{o}n.
+
+El procedimiento seguido fue:
+
+\begin{enumerate}
+    \item Definir el concepto del juego: un simulador donde el usuario toma el rol de analista en un centro de operaciones de seguridad.
+    \item Dise\~{n}ar las pantallas principales: men\'{u}, mapa de niveles, simulaci\'{o}n activa, tutorial, manual de apoyo y opciones.
+    \item Plantear mec\'{a}nicas base: revisar correos, analizar consola, responder llamadas y tomar decisiones.
+    \item Incorporar retroalimentaci\'{o}n inmediata mediante mensajes, bit\'{a}cora y consecuencias simuladas.
+    \item Revisar si el lenguaje usado mantiene tono de juego y no de clase tradicional.
+    \item Identificar mejoras necesarias antes de avanzar a una prueba con estudiantes.
+\end{enumerate}
+
+La herramienta principal utilizada fue Figma, debido a que permite construir un mockup visual navegable, representar pantallas, organizar componentes de interfaz y demostrar el flujo del sistema sin desarrollar todav\'{i}a la l\'{o}gica completa del videojuego.
+
+Como referentes de dise\~{n}o se tomaron mec\'{a}nicas de juegos de observaci\'{o}n y deducci\'{o}n, especialmente aquellas relacionadas con leer informaci\'{o}n con atenci\'{o}n, detectar incongruencias peque\~{n}as, trabajar con pistas incompletas y tomar decisiones con consecuencias posteriores. No se copiaron personajes, historia ni estructura visual de otros juegos; solo se adapt\'{o} la idea de an\'{a}lisis y decisi\'{o}n a un contexto educativo de ciberseguridad.
+
+En el prototipo, estas referencias se adaptaron al contexto de ciberseguridad. En lugar de documentos migratorios o escenas de investigaci\'{o}n hist\'{o}rica, el jugador revisa correos sospechosos, dominios alterados, llamadas de ingenier\'{i}a social, registros de red y eventos dentro de un turno de seguridad.
+
+\section{Escenario o Caso de Uso Definido}
+
+El caso de uso definido se desarrolla en una empresa ficticia llamada NovaTech S.A. El jugador ocupa la estaci\'{o}n de un analista de ciberseguridad durante un turno de revisi\'{o}n. Su tarea consiste en analizar eventos entrantes antes del cierre del turno.
+
+El flujo propuesto es:
+
+\begin{enumerate}
+    \item El jugador ingresa al men\'{u} principal y revisa su perfil de analista.
+    \item Selecciona un caso desde el mapa de progreso.
+    \item Entra a la simulaci\'{o}n activa y revisa tres frentes: bandeja de correo, consola y di\'{a}logo telef\'{o}nico.
+    \item Decide si cada evento debe aprobarse, reportarse, analizarse o escalarse.
+    \item El sistema registra las decisiones y muestra retroalimentaci\'{o}n inmediata.
+    \item Al completar el nivel, se propone una pantalla de reporte con aciertos, errores y riesgos pendientes.
+\end{enumerate}
+
+El escenario permite aplicar conocimientos reales, como identificar dominios falsificados, reconocer urgencia sospechosa, revisar adjuntos peligrosos, usar comandos de contenci\'{o}n simulados y rechazar solicitudes de c\'{o}digos o credenciales por tel\'{e}fono.
+
+\section{Pantallas del Prototipo}
+
+El prototipo desarrollado en Figma est\'{a} compuesto por las pantallas de men\'{u} principal, mapa de niveles, simulaci\'{o}n por bandeja de correos, simulaci\'{o}n por consola, simulaci\'{o}n por di\'{a}logo, tutorial, manual de apoyo y opciones. Estas pantallas permiten demostrar el flujo general del videojuego educativo, desde la selecci\'{o}n del caso hasta la toma de decisiones y la retroalimentaci\'{o}n inmediata.
+
+\subsection{Men\'{u} principal}
+
+La pantalla de men\'{u} principal funciona como entrada al prototipo. Presenta el nombre del simulador, el perfil del analista, el progreso del usuario y los m\'{o}dulos del curso. Desde esta pantalla el jugador puede continuar la partida, acceder al mapa de niveles, iniciar una nueva partida, abrir opciones o consultar el tutorial.
+
+Esta pantalla permite validar si el concepto general del videojuego es comprensible desde el primer contacto.
+
+\subsection{Mapa de niveles}
+
+El mapa de niveles organiza el contenido en actos o m\'{o}dulos. Los m\'{o}dulos planteados son \textit{phishing}, malware, ingenier\'{i}a social y respuesta a incidentes. Cada nodo representa un escenario o caso de pr\'{a}ctica.
+
+El mapa tambi\'{e}n incluye un panel de briefing del escenario seleccionado, donde se muestra el nombre del caso, dificultad, recompensa en experiencia y aprendizajes esperados. Esta pantalla permite validar la progresi\'{o}n educativa del videojuego.
+
+\subsection{Gameplay / Bandeja}
+
+La pantalla de gameplay por bandeja representa la mec\'{a}nica principal del prototipo. El jugador debe revisar correos entrantes, observar remitentes, dominios, urgencia del mensaje y pistas detectables.
+
+La pantalla incluye:
+
+\begin{itemize}
+    \item Mini-mapa de red de NovaTech.
+    \item Objetivos del turno.
+    \item Lista de correos.
+    \item Correo sospechoso seleccionado.
+    \item Pistas detectables.
+    \item Botones de decisi\'{o}n.
+    \item Panel de concepto.
+    \item Feedback inmediato.
+    \item Bit\'{a}cora de decisiones.
+\end{itemize}
+
+Esta pantalla demuestra la mec\'{a}nica de observaci\'{o}n, an\'{a}lisis y decisi\'{o}n.
+
+\subsection{Gameplay / Consola}
+
+La pantalla de consola representa acciones simuladas de respuesta a incidentes. El jugador observa comandos ficticios como escaneo de red, aislamiento de host o bloqueo de dominio.
+
+Esta pantalla no ejecuta acciones reales ni ataques inform\'{a}ticos. Su finalidad es representar de forma visual y segura c\'{o}mo podr\'{i}an tomarse decisiones b\'{a}sicas de contenci\'{o}n dentro de un entorno controlado.
+
+\subsection{Gameplay / Di\'{a}logo}
+
+La pantalla de di\'{a}logo representa una situaci\'{o}n de ingenier\'{i}a social. El jugador recibe una llamada de un supuesto soporte t\'{e}cnico que solicita informaci\'{o}n sensible o credenciales.
+
+El objetivo de esta pantalla es evaluar si el jugador reconoce se\~{n}ales de riesgo como urgencia, presi\'{o}n social, solicitud de contrase\~{n}a y suplantaci\'{o}n de identidad.
+
+\subsection{Tutorial}
+
+La pantalla de tutorial introduce al jugador al funcionamiento b\'{a}sico del simulador. Explica que el usuario debe observar pistas, revisar informaci\'{o}n, tomar decisiones y aprender mediante retroalimentaci\'{o}n.
+
+Esta pantalla cumple la funci\'{o}n de inducci\'{o}n inicial antes de entrar a la simulaci\'{o}n.
+
+\subsection{Manual}
+
+La pantalla de manual funciona como apoyo educativo interno. Contiene conceptos, recomendaciones y reglas de an\'{a}lisis que el jugador puede consultar durante la experiencia.
+
+El manual permite que el aprendizaje no dependa \'{u}nicamente de errores, sino tambi\'{e}n de una fuente de consulta dentro del mundo del juego.
+
+\subsection{Opciones}
+
+La pantalla de opciones completa el flujo del prototipo. Incluye configuraci\'{o}n visual, audio, controles y pedagog\'{i}a. Tambi\'{e}n permite representar opciones de accesibilidad como tama\~{n}o de texto y reducci\'{o}n de animaciones.
+
+\section{Datos, Procesos y Resultados Alcanzados}
+
+Los datos obtenidos fueron cualitativos, a partir de la revisi\'{o}n del prototipo, la navegaci\'{o}n en Figma y la demostraci\'{o}n en video. Se analizaron pantallas, navegaci\'{o}n, coherencia de las mec\'{a}nicas y relaci\'{o}n con el objetivo educativo.
+
+Los principales resultados fueron:
+
+\begin{itemize}
+    \item Se obtuvo una maqueta navegable con identidad visual inicial: \textit{CybOps}.
+    \item Se defini\'{o} un escenario claro: una empresa ficticia llamada NovaTech S.A.
+    \item Se construy\'{o} una pantalla de juego con m\'{o}dulos de bandeja, consola y di\'{a}logo.
+    \item Se plante\'{o} un mapa de casos para organizar dificultad progresiva: \textit{phishing}, malware, ingenier\'{i}a social y respuesta a incidentes.
+    \item Se incorpor\'{o} un tutorial como gu\'{i}a inicial para el jugador.
+    \item Se incorpor\'{o} un manual como apoyo educativo consultable.
+    \item Se incluy\'{o} retroalimentaci\'{o}n inmediata y bit\'{a}cora para reforzar el aprendizaje.
+    \item Se realiz\'{o} una demostraci\'{o}n mediante video y enlace al prototipo navegable.
+\end{itemize}
+
+Tambi\'{e}n se detectaron ajustes importantes. La mec\'{a}nica no debe depender \'{u}nicamente de botones de decisi\'{o}n; debe exigir observaci\'{o}n de detalles. Adem\'{a}s, el cierre de nivel debe mostrar qu\'{e} sali\'{o} bien y qu\'{e} sali\'{o} mal mediante un reporte operativo, no mediante correcciones directas de profesor.
+
+\section{Propuesta de Retroalimentaci\'{o}n del Nivel}
+
+La mejora principal planteada para el siguiente prototipo es una pantalla de ``turno completado''. Esta pantalla funcionar\'{i}a como reporte interno del SOC y mostrar\'{i}a:
+
+\begin{itemize}
+    \item Casos procesados durante el turno.
+    \item Incidentes contenidos correctamente.
+    \item Decisiones riesgosas y sus consecuencias.
+    \item Equipos o servicios afectados.
+    \item Reputaci\'{o}n o desempe\~{n}o del analista.
+    \item Conceptos reforzados durante el nivel.
+\end{itemize}
+
+Por ejemplo, en lugar de decir ``respuesta incorrecta'', el reporte podr\'{i}a indicar: ``PC-04 inici\'{o} conexi\'{o}n an\'{o}mala 14 minutos despu\'{e}s de aprobar un correo sospechoso''. De esa forma, el jugador entiende el error por la consecuencia observada, manteniendo el tono de simulador.
+
+\section{Demostraci\'{o}n del Pre-experimento}
+
+La demostraci\'{o}n del pre-experimento fue realizada mediante un video explicativo y el enlace al prototipo navegable desarrollado en Figma.
+
+\begin{itemize}
+    \item \textbf{Prototipo en Figma:} \url{https://www.figma.com/design/KsTCwbCQD2FcECI1rqSe6x/Taller-de-Grado-I}
+    \item \textbf{Video de demostraci\'{o}n:} \url{https://youtu.be/F32fgp2RtMg}
+\end{itemize}
+
+La demostraci\'{o}n permite evidenciar el flujo de navegaci\'{o}n, las pantallas principales, la mec\'{a}nica de simulaci\'{o}n y la forma en que el prototipo representa contenidos de ciberseguridad.
+
+\section{Conclusiones}
+
+El pre-experimento permiti\'{o} comprobar que la propuesta es viable como prototipo inicial. El rol de analista de ciberseguridad funciona para representar situaciones pr\'{a}cticas y permite que el jugador aplique conocimientos sin recibir una explicaci\'{o}n directa en todo momento.
+
+Las mec\'{a}nicas m\'{a}s prometedoras son la detecci\'{o}n de incongruencias, la comparaci\'{o}n de datos y la toma de decisiones con consecuencias. Estas mec\'{a}nicas se adaptan bien a temas como \textit{phishing}, ingenier\'{i}a social, malware y respuesta a incidentes.
+
+El prototipo cumple con el objetivo del pre-experimento porque permite demostrar una maqueta navegable, un escenario definido, un flujo de uso, mec\'{a}nicas educativas iniciales y resultados cualitativos. Adem\'{a}s, incorpora pantallas de apoyo como tutorial y manual, lo cual fortalece el enfoque educativo del proyecto.
+
+Sin embargo, todav\'{i}a requiere ajustes antes de validarse con usuarios. Principalmente, se debe fortalecer la pantalla de cierre de nivel, mejorar la navegaci\'{o}n entre pantallas y hacer que cada decisi\'{o}n dependa m\'{a}s de la observaci\'{o}n de detalles. Aun as\'{i}, el pre-experimento confirma que el enfoque de simulaci\'{o}n gamificada puede continuar desarroll\'{a}ndose como apoyo al aprendizaje pr\'{a}ctico de ciberseguridad.
+
+\end{document}
+
